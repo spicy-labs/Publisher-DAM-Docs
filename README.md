@@ -296,8 +296,9 @@ So, what that means is that for each PDF given, CHILI BackOffice will use a comp
 #### Load in frame
 To load this external asset in a frame, you will use the function `LoadContentFromExternalServerXmlString`
 
-![](load-content-js.webp)
-
+```js
+editorObject.executeFunction("document.selectedFrame", "LoadContentFromExternalServerXmlString", '<item id="2" name="pumpkins-469641_1920.jpg" fileName="pumpkins-469641_1920.jpg" remoteURL="http://www.spicy-labs.com/external/images/pumpkins-469641_1920.jpg" thumb="http://www.spicy-labs.com/external/images/pumpkins-469641_1920.jpg" keepExternal="true" highResPdfURL="http://www.spicy-labs.com/external/images/pumpkins-469641_1920.jpg" accessibleFromClient="false"><fileInfo width="1920" height="1080" resolution="300" fileSize="542KB"/></item>');
+```
 
 
 ## Document Output
